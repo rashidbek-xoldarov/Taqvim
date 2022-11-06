@@ -1,0 +1,36 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+/* STICKY FOOTER */
+.site-main {
+  flex-grow: 1;
+}
+
