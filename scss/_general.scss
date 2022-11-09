@@ -21,6 +21,7 @@ body {
   line-height: var(--main-line-height);
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
+  background-image: url("../images/bg.png");
   overflow-x: hidden;
 }
 
@@ -34,3 +35,14 @@ img {
   flex-grow: 1;
 }
 
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dae3ea;
+}

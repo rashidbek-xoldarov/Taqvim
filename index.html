@@ -4,30 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Namoz vaqtlari</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container"></div>
-    </header>
-    <!-- /Header -->
-
     <!-- Main -->
     <main class="site-main">
       <!-- Hero -->
       <section class="hero">
-        <div class="container"></div>
+        <div class="container">
+          <h1 class="hero__title">Namoz vaqtlari(Toshkent)</h1>
+          <div class="select-wrapper">
+            <div class="button-wrapper">
+              <button class="duration-btn" value="day">Kunlink</button>
+              <button class="duration-btn" value="week">Xaftalik</button>
+              <button class="duration-btn" value="monthly">Oylik</button>
+            </div>
+            <select class="regions" placeholder="Manzilni kiriting">
+              <option value="Toshkent">Toshkent</option>
+              <option value="andijon">Andijon</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Marg'ilon">Farg'ona</option>
+              <option value="Samarqand">Samarqand</option>
+              <option value="Urgut">Urgut</option>
+              <option value="Buxoro">Buxoro</option>
+              <option value="Sirdaryo">Sirdaryo</option>
+              <option value="Surxandaryo">Surxandaryo</option>
+              <option value="Navoiy">Navoiy</option>
+              <option value="Jizzax">Jizzax</option>
+            </select>
+          </div>
+          <div class="times-wrapper"></div>
+          <table class="table table-striped weekly-table">
+            <thead>
+              <tr>
+                <th scope="col">Kun</th>
+                <th scope="col">Tong</th>
+                <th scope="col">Quyosh</th>
+                <th scope="col">Peshin</th>
+                <th scope="col">Asr</th>
+                <th scope="col">Shom</th>
+                <th scope="col">Xufton</th>
+              </tr>
+            </thead>
+            <tbody class="weekly-body"></tbody>
+          </table>
+        </div>
       </section>
       <!-- /Hero -->
+
+      <!-- Loader -->
+      <div class="loader-wrapper">
+        <img
+          src="./images/loader.jpg"
+          alt="loader img"
+          width="700"
+          height="800"
+        />
+      </div>
+      <!-- /Loader -->
+
+      <template class="times-template">
+        <div class="times">
+          <span class="times-time">00:00</span>
+          <span class="times-day"></span>
+        </div>
+      </template>
+
+      <template class="table-template">
+        <tr>
+          <td scope="row" class="table-content content-data"></td>
+          <td scope="row" class="table-content content-tong"></td>
+          <td scope="row" class="table-content content-quyosh"></td>
+          <td scope="row" class="table-content content-peshin"></td>
+          <td scope="row" class="table-content content-asr"></td>
+          <td scope="row" class="table-content content-shom"></td>
+          <td scope="row" class="table-content content-xufton"></td>
+        </tr>
+      </template>
     </main>
     <!-- /Main -->
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container"></div>
-    </footer>
-    <!-- /Footer -->
 
     <script src="./js/main.js"></script>
   </body>

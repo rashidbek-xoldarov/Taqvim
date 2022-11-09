@@ -1,11 +1,11 @@
 /* VARIABLES */
 :root {
-  --main-font-family: "Public Sans", "Arial", sans-serif;
+  --main-font-family: "Roboto", "Arial", sans-serif;
   --main-text-color: #33323d;
   --main-bg-color: #fafafa;
   --main-font-size: 16px;
   --main-font-weight: 400;
-  --main-line-height: 30px;
+  --main-line-height: 18px;
 }
 
 /* NORMALIZE */
@@ -336,6 +336,7 @@ body {
   line-height: var(--main-line-height);
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
+  background-image: url("../images/bg.png");
   overflow-x: hidden;
 }
 
@@ -347,6 +348,18 @@ img {
 /* STICKY FOOTER */
 .site-main {
   flex-grow: 1;
+}
+
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dae3ea;
 }
 
 /* Visually-hidden */
@@ -362,4 +375,93 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero__title {
+  margin-top: 100px;
+  font-size: 45px;
+  line-height: 64px;
+  color: #0e820e;
+  text-align: center;
+}
+
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.duration-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #0e820e;
+}
+
+.regions {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #0e820e;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  border-bottom: 1px solid black;
+}
+
+th {
+  padding: 10px 20px;
+}
+
+td {
+  padding: 6px 25px;
+}
+
+.times-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #0e820e;
+}
+
+.times-time {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0e820e;
+}
+
+.times-day {
+  font-size: 14px;
+  color: #212529;
 }/*# sourceMappingURL=main.css.map */
